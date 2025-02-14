@@ -3,13 +3,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo In building stage
+                echo 'In building stage'
                 bat 'javac HelloWorld.java'
             }
         }
         stage('Run') {
             steps {
-                echo In Run stage
+                echo 'In Run stage'
                 bat 'java HelloWorld'
             }
         }
