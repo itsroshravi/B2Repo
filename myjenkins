@@ -7,6 +7,12 @@ pipeline {
                 bat 'javac HelloWorld.java'
             }
         }
+        stage('Test') {
+            steps {
+                echo 'Testing....'
+               
+            }
+        }
         stage('Run') {
             steps {
                 echo 'In Run stage'
